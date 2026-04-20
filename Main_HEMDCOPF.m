@@ -24,7 +24,7 @@ for c = 2
     %Res_LDC{c} = Lossless_dcopf(mpc{c}, mpopt);
     
     %HEM-DCOPF
-    %mpc{c} = ext2int(mpc{c});
-    Res_HEMDC{c} = HEM_DCOPF(mpc{c});
+    mpc{c} = ext2int(mpc{c});
+    Res_HEMDC{c} = HEM_DCOPF(mpc{c},10);
     
 end
